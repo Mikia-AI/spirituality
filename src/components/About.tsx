@@ -10,7 +10,7 @@ const About = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={janePortrait1}
+                src={janePortrait2}
                 alt="Jane Jaqué"
                 className="w-full h-[500px] object-cover"
                 loading="lazy"
