@@ -1,4 +1,5 @@
-import aboutImage from "@/assets/about-image.jpg";
+import janePortrait1 from "@/assets/jane-portrait1.jpg";
+import janePortrait2 from "@/assets/jane-portrait2.jpg";
 
 const About = () => {
   return (
@@ -9,12 +10,10 @@ const About = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={aboutImage}
-                alt="Spirituel atmosfære"
+                src={janePortrait1}
+                alt="Jane Jaqué"
                 className="w-full h-[500px] object-cover"
                 loading="lazy"
-                width={800}
-                height={1024}
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-accent/30 rounded-2xl" />
