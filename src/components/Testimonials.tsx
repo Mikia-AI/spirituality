@@ -1,35 +1,4 @@
-const testimonials = [
-  {
-    text: "Jane leverede udelukkende specifikke beskeder, som kun kunne passe på mig. Føler mig dybt ramt og har fået årsag beskrevet 100% præcist. En perfekt og helt igennem god og tryg oplevelse.",
-    name: "Lene J.",
-    location: "Sorgenfri",
-  },
-  {
-    text: "Jeg var meget imponeret over min session hos Jane. Det var dejlig konkret og meget præcis både ift. den livssituation, jeg står i nu, men også mine fremtidsplaner.",
-    name: "Vickie W.",
-    location: "København",
-  },
-  {
-    text: "Det var en vild oplevelse, hun var meget præcis og flere gange kunne jeg ikke forstå, hun vidste alt det om mig. Jeg kan kun give hende mine anbefalinger.",
-    name: "Trine M. H.",
-    location: "Østerbro",
-  },
-  {
-    text: "Jeg ville give Jane karakteren 13, hvis jeg kunne. Clairvoyancen har ramt en livsnerve og det mærkes dybt i sjælen.",
-    name: "Ditte A.",
-    location: "Holbæk",
-  },
-  {
-    text: "Jeg havde ikke regnet med at Jane kunne give så klart et billede af hvem jeg er som menneske — men også i forhold til mit arbejde.",
-    name: "Anette M.",
-    location: "København",
-  },
-  {
-    text: "Jane virkede meget tryg i sig selv og det betød rigtigt meget. Hun virker som en varm person. Hun er virkelig dygtig.",
-    name: "Susanne",
-    location: "København",
-  },
-];
+import testimonials from "../data/testimonials.json";
 
 const Testimonials = () => {
   return (

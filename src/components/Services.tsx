@@ -1,47 +1,13 @@
-const services = [
-  {
-    title: "Clairvoyantvejledning",
-    desc: "I København eller online. Jeg stiller ind på dig og giver dig budskaber og redskaber til et bedre liv.",
-    duration: "45 min",
-    price: "499 kr.",
-    icon: "✦",
-  },
-  {
-    title: "Forældre-barn relation",
-    desc: "Clairvoyant vejledning med fokus på forældre-barn relationen og familiens dynamik.",
-    duration: "45 min",
-    price: "499 kr.",
-    icon: "❋",
-  },
-  {
-    title: "Dybdegående forældre-barn",
-    desc: "Jeg stiller ind på barnet via forældre — en dybere session med udvidet tid.",
-    duration: "60 min",
-    price: "600 kr.",
-    icon: "✧",
-  },
-  {
-    title: "Afdødekontakt",
-    desc: "Kontakt med afdøde kære i et trygt og respektfuldt rum.",
-    duration: "45 min",
-    price: "499 kr.",
-    icon: "☽",
-  },
-  {
-    title: "Chakra-clairvoyance",
-    desc: "Clairvoyance med afsæt i dine chakraer for dybere selvindsigt.",
-    duration: "45 min",
-    price: "499 kr.",
-    icon: "◎",
-  },
-  {
-    title: "Karmasitting",
-    desc: "Jeg kigger på dine tidligere liv, der påvirker dine nuværende udfordringer.",
-    duration: "45 min",
-    price: "499 kr.",
-    icon: "∞",
-  },
-];
+import servicesData from "../data/services.json";
+
+const services = servicesData.map((s) => ({
+  title: s.title,
+  desc: s.description,
+  duration: s.duration,
+  price: s.price,
+  icon: s.icon,
+  image: s.image,
+}));
 
 const Services = () => {
   return (
@@ -63,7 +29,11 @@ const Services = () => {
               key={s.title}
               className="group bg-card rounded-xl p-8 border border-border hover:border-accent/40 transition-all duration-500 hover:shadow-lg hover:-translate-y-1"
             >
-              <span className="text-3xl text-accent mb-4 block">{s.icon}</span>
+              {s.image ? (
+                <img src={s.image} alt={s.title} className="w-full h-40 object-cover rounded-lg mb-4" />
+              ) : (
+                <span className="text-3xl text-accent mb-4 block">{s.icon}</span>
+              )}
               <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
                 {s.title}
               </h3>
